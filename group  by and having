@@ -1,0 +1,30 @@
+# union ,union all,count(having),exists,group by
+1.UNION : select coulmn from tablename1
+    -> union
+    -> select coulmn from table name2
+    -> order by coulumn;
+2. UNION ALL : select couluumn from tablename1
+    -> UNION ALL
+    -> select coulumn from tablename2
+    -> order by coulumn;
+3. by using where conditions :  select column1,column2 from tablename1
+    -> where conditiom
+    -> UNION
+    -> select column1,column2 from tablename2
+    -> where condition
+    -> order by couluumn;
+4. count(having) :  select count(coulmn),column
+    -> from tablename
+    -> group by column
+    -> having count(condition);
+5. group by : select column
+    -> from tablename
+    -> where condition
+    -> group by column
+    -> order by coloumn;
+6. exists :  select name
+    -> from suppliers
+    -> where exists(select columnn from tablename1 where condition);//condition=tablename1.column=tablename2.colum AND condition
+7. count(group by) : select count(id),country
+    -> from customers
+    -> group by country;
